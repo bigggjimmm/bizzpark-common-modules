@@ -1,0 +1,9 @@
+<md-list flex> 
+<md-subheader ng-if='SUBTITLE' class="md-no-sticky">{{ SUBTITLE | translate}}</md-subheader> 
+<md-list-item class="md-1-line" ng-repeat="item in msgs"> 
+ <div class="md-list-item-text" >
+	<span>{{ item  }}</span> 
+</div>
+</md-list-item> 
+<md-divider></md-divider> 
+</md-list>

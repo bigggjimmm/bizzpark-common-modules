@@ -1,0 +1,11 @@
+<md-bottom-sheet class="md-list" layout="column" layout-align="center center"  >  
+  <div layout='row' layout-wrap flex-offset-gt-xs='10'  >  
+   <div layout="column" layout-align="center start"  >
+    <span>{{ 'BIZZPARK-PROMO-IS-USING-COOKIES' | translate }} </span>
+    <span>{{ 'BIZZPARK-PROMO-IS-USING-COOKIES-ACCEPT' | translate }}</span>
+   </div> 
+   <md-button md-theme='infoTheme' class='md-primary md-raised' ng-click='ok()' >{{'OK' | translate | lowercase}}</md-button> 
+   <md-button md-theme='default' class='md-primary md-raised' ng-click='showMore()' >{{'MORE' | translate | lowercase}}</md-button>
+   <md-button md-theme='default' class='md-primary' ng-click='close()' ><i class='material-icons'>close</i> </md-button>
+   </div>  
+</md-bottom-sheet>

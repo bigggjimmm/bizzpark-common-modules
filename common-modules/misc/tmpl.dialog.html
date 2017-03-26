@@ -1,0 +1,34 @@
+<md-dialog flex role="dialog" 
+aria-label="dialog  "  
+class=" chtmltmpl chtmltmpltrns"  
+md-theme="{{ mdTheme ? mdTheme : 'default' }}" 
+style=" max-width:{{ngStyle.width}}; max-height: {{ngStyle.height}};"
+>  
+    <md-toolbar ng-if='TBT' md-theme="{{ mdTheme ? mdTheme : 'default' }}" >
+      <div class="md-toolbar-tools {{TBTSelector}}" layout-padding> 
+        
+      </div>
+    </md-toolbar> 
+    <md-dialog-content md-theme="{{ mdTheme ? mdTheme : 'default' }}" flex layout-padding> 
+      <div class="md-dialog-content {{CTSelector}}" layout-margin>   
+      </div>
+    </md-dialog-content> 
+    
+    <md-dialog-actions md-theme="{{ mdTheme ? mdTheme : 'default' }}" layout-margin layout="row"  ng-if='TBB' layout-wrap class="{{TBBSelector}}" md-colors="{background: 'default-background-200-100'}"> 
+           
+     </md-dialog-actions> 
+</md-dialog>
+
+
+<!-- 
+<div role="dialog" layout="column" flex class=" chtmltmpl chtmltmpltrns" style="width:{{ngStyle.width}}; height: {{ngStyle.height}};">
+<md-toolbar ng-if='toolBarTop'>
+<div flex class="md-toolbar-tools {{toolBarTopSelector}}"> </div>
+</md-toolbar>
+<md-content flex layout-padding > 
+<div flex class="{{contentSelector}}" layout="column" layout-padding> </div> 
+</md-content> 
+<div layout="row" ng-if='toolBarBottom' md-colors="{background: 'default-background-200-100'}" layout-wrap class="default-panel-button {{toolBarBottomSelector}}"></div>
+</div>
+ -->
+ 

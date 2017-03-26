@@ -1,0 +1,15 @@
+<div role="dialog" 
+layout="column" 
+flex 
+class=" chtmltmpl chtmltmpltrns"  
+md-theme="{{ mdTheme ? mdTheme : 'default' }}" 
+style="width:{{ngStyle.width}}; height: {{ngStyle.height}};">
+<md-toolbar ng-if='TBT'>
+<div flex class="md-toolbar-tools {{TBTSelector}}" layout-padding> </div>
+</md-toolbar>
+<md-content flex layout-padding> 
+<div flex class="{{CTSelector}}" layout="column" layout-margin> </div> 
+</md-content> 
+<div layout="row" ng-if='TBB'  md-colors="{background: 'default-background-200-100'}" layout-padding layout-wrap class="default-panel-button {{TBBSelector}}"></div>
+</div>
+ 
